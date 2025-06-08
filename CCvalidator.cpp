@@ -3,7 +3,7 @@
 #include <string>
 
 using namespace std;
-
+//here we check if string entered is correct and doesn't contain any alphabets.
 bool isNumberString(string& num) {
     int len =num.length();
     for (int i = 0; i < len; i++) {
@@ -29,7 +29,8 @@ int main() {
             cout << "Bad input! ";
             continue;
         }
-            
+        //algorithm explained in README.
+        //starting of luhn algorithm from here:
         int len = ccNumber.length(),sum=0,digit=0;
        for(int i=len-1;i>=0;i--){
            int digit=ccNumber[i]-'0';
